@@ -14,8 +14,15 @@ public class DetectarObstaculos extends Observable implements Runnable {
     //objeto que almacena si hay o no un obstaculo
     private String objeto;
     
+   //nombre del sensor
+    private String nombre;
+    
     //valor random para cambiar el estado del objeo 
     private final Random r = new Random();
+
+    public DetectarObstaculos(String nombre) {
+        this.nombre = nombre;
+    }
 
     @Override
     public void run() {
@@ -48,5 +55,10 @@ public class DetectarObstaculos extends Observable implements Runnable {
             this.notifyObservers(this.objeto);
         }
     }
+    
+    public String getNombre() {
+        return nombre;
+    }
+   
 }
     

@@ -53,19 +53,20 @@ public class AcelerarFrenar implements Observer {
     @Override
     public void update(Observable detectar, Object objeto) {
         
+        DetectarObstaculos sensor = (DetectarObstaculos) detectar;
         
         if (this.observados.contains(detectar)) {
             
             //Si no hay ningun obstaculo se acelera
             if (objeto == "nada"){
                 
-                System.out.println(verde + "Acelerando, " + objeto + " En el camino" + normal);
+                System.out.println(verde + "Acelerando, " + sensor.getNombre() + objeto + " En el camino" + normal);
                 System.out.println(" ");
             
             //Si se encuentran obstaculos se frena 
             }else if (objeto == "objeto"){
                 
-                System.out.println(rojo + "Frenando, " + objeto + " En el camino" + normal);
+                System.out.println(rojo +"Frenando, " + sensor.getNombre() + objeto + " En el camino" + normal);
                 System.out.println(" ");
             }
             
