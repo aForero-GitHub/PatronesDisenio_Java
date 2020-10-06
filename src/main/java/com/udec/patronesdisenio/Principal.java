@@ -15,7 +15,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        /*
         //SINGLETON-------------------------------------------------------
             SingletonClass singleton = new SingletonClass();
             singleton.singleton();
@@ -30,7 +30,7 @@ public class Principal {
             FacadeClass facade= new FacadeClass();
             facade.facade();
         //----------------------------------------------------------------
-        
+        */
         //OBSERVABLE------------------------------------------------------
             ObservableClass observar = new ObservableClass();
             observar.observar();
