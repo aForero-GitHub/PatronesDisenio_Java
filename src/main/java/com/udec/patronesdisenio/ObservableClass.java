@@ -14,7 +14,8 @@ import observablepackage.DetectarObstaculos;
 public class ObservableClass {
 
     public void observar() {
-
+        //Enviar nombre del sensor
+        
         DetectarObstaculos sensor = new DetectarObstaculos("Sensor 1 ");
         DetectarObstaculos sensor1 = new DetectarObstaculos("Sensor 2 ");
         DetectarObstaculos sensor2 = new DetectarObstaculos("Sensor 3 ");
@@ -32,6 +33,7 @@ public class ObservableClass {
         acelerar.escucharSensor(sensor2);
         acelerar.escucharSensor(sensor3);
 
+        //Iniciar sensores
         hilo.start();
         hilo1.start();
         hilo2.start();
